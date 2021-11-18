@@ -1,101 +1,224 @@
-*{
-    margin: 0;
-    padding:0;
-     
-}
-body 
-{
-    background-color: rgb(182, 117, 182);
-  }
-
-nav
-{
-    width: 100%;
-    height :60px;
-    background-color:white;
-   
-
-}
-
-
-  ul{
-
-
-
-}
-ul li 
-{
-    list-style:none; 
-    display: inline-block;
-    float:left;
-    line-height: 60px;
-    position: relative;
-
-}
-ul li a
-{
-    display: block;
-    text-decoration: none;
-    font-size: 21px; 
-    font-family: tahoma, helvetica, sans-serif;
-    color: rgb(152, 132, 155);
-    padding: 0px 20px;
-
-
-}
-ul li ul
-{
-    display: none;
-    position: absolute;
-    background-color:white;
-    padding: 10px;
-    border-radius: 0px 0px 4px 4px;
-    
-}
-ul li:hover ul 
-{
-    display: block;
-
-  
-    
-}
-ul li ul a
-{
-    padding :8px 14px;
-    background-color:white
-
-    
-}
-ul li ul li
-{
-    width: 180px;
-    border-radius:4px;
-}
-ul li ul a:hover
-{
-    padding :8px 14px;
-    background-color:#f3f3f3;
-
-
-    
-}
-ul li a:hover
-{
-    color:purple;
-}
-em {
-    font-weight: bold;
-    color: rgb(156, 37, 172);
-  }
-  p {
-    text-align: initial;
-    font-family: tahoma, helvetica, sans-serif;
-    font-size: 21px;
-  }
-  h1 {
-    font-family: tahoma, helvetica, sans-serif;
-    color: purple;
-    text-shadow: -4px 4px 6p rgb(240, 114, 240);
-  }
-
-  
+                * {
+                    margin: 0;
+                    padding: 0;
+                }
+                
+                body {
+                    background-color: #FFE4E1;
+                }
+                
+                nav {
+                    width: 100%;
+                    height: 60px;
+                    background-color: #ECC5C0;
+                }
+                
+                ul {}
+                
+                ul li {
+                    list-style: none;
+                    display: inline-block;
+                    float: left;
+                    line-height: 60px;
+                    position: relative;
+                }
+                
+                ul li a {
+                    display: block;
+                    text-decoration: none;
+                    font-size: 21px;
+                    font-family: Questa Grande;
+                    color: #7F525D;
+                    padding: 0px 20px;
+                }
+                
+                ul li ul {
+                    display: none;
+                    position: absolute;
+                    background-color: white;
+                    padding: 10px;
+                    border-radius: 0px 0px 4px 4px;
+                }
+                
+                ul li:hover ul {
+                    display: block;
+                }
+                
+                ul li ul a {
+                    padding: 8px 14px;
+                    background-color: white
+                }
+                
+                ul li ul li {
+                    width: 180px;
+                    border-radius: 4px;
+                }
+                
+                ul li ul a:hover {
+                    padding: 8px 14px;
+                    background-color: #FFE4E1;
+                }
+                
+                ul li a:hover {
+                    color: #3F000F;
+                }
+                
+                em {
+                    font-weight: bold;
+                    color: #7E354D;
+                }
+                
+                p {
+                    text-align: initial;
+                    font-family: Questa Grande;
+                    font-size: 21px;
+                    margin-top: 50px;
+                    margin-bottom: 50px;
+                    margin-right: 20px;
+                    margin-left: 10px;
+                    color: #3D0C02;
+                }
+                
+                h1 {
+                    font-family: Questa Grande;
+                    color: #7E354D;
+                    margin: 1rem 1.5rem;
+                }
+                
+                h2 {
+                    font-family: Questa Grande;
+                    color: #7E354D;
+                    margin: 1rem 1.5rem;
+                }
+                
+                fieldset {
+                    mask-border-mode: vertical;
+                    border-color: #997070;
+                    ;
+                }
+                
+                .special {
+                    font-size: 12pt;
+                    font-family: Questa Grande;
+                    color: #7E354D
+                }
+                
+                .logo {
+                    float: right;
+                    width: 130px;
+                    height: 160px;
+                    position: absolute;
+                    top: 60px;
+                    right: 30px;
+                }
+                
+                .container {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center
+                }
+                
+                img {
+                    max-width: 100%;
+                    background-attachment: fixed;
+                }
+                
+                .image {
+                    flex-basis: 40%;
+                    background-attachment: fixed;
+                }
+                
+                .text {
+                    font-size: 20px;
+                    padding-left: 20px;
+                }
+                
+                b {
+                    color: #7E354D;
+                    font-family: Questa Grande;
+                }
+                
+                body {
+                    text-align: center;
+                }
+                
+                h2 {
+                    color: #7E354D;
+                }
+                
+                .gallery {
+                    margin: 10px 40px;
+                }
+                
+                .gallery img {
+                    width: 200px;
+                    height: 50px;
+                    transition: 1s;
+                    padding: 5px;
+                }
+                
+                .gallery img:hover {
+                    filter: drop-shadow(4px 4px 6px gray);
+                    transform: scale(1.1);
+                }
+                
+                .container {
+                    margin: 0 auto;
+                    width: 90%;
+                }
+                
+                .main_view {
+                    width: 80%;
+                    height: 25rem;
+                }
+                
+                .main_view img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                
+                .side_view {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                }
+                
+                .side_view img {
+                    width: 9rem;
+                    height: 7rem;
+                    object-fit: cover;
+                    cursor: pointer;
+                    margin: 0.5rem;
+                }
+                
+                .container {
+                    margin: 0 auto;
+                    width: 90%;
+                }
+                
+                .main_view {
+                    width: 80%;
+                    height: 45rem;
+                    width: 45rem;
+                }
+                
+                .main_view img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                
+                .side_view {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                }
+                
+                .side_view img {
+                    width: 9rem;
+                    height: 15rem;
+                    object-fit: cover;
+                    cursor: pointer;
+                    margin: 0.5rem;
+                }
